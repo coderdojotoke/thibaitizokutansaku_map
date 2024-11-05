@@ -68,31 +68,31 @@ class UpdateScreen extends ConsumerWidget {
 
     return
       Scaffold(
-      appBar: AppBar(title: const Text('メモを入力')),
-      body: Column(
-        children: [
-          Text(
+        appBar: AppBar(title: const Text('メモを入力')),
+        body: Column(
+          children: [
+            Text(
               '${chibaujiList[no-1].name}のメモ',
-            style: TextStyle(fontSize: 20),
-          ),
-          TextFormField(
-            controller: chibaujiContentTextController,
-            maxLength: 20,
-            onChanged:(String? value){
+              style: TextStyle(fontSize: 20),
+            ),
+            TextFormField(
+              controller: chibaujiContentTextController,
+              maxLength: 20,
+              onChanged:(String? value){
                 enable = true;
-              print(enable);
-            } ,
-          ),
+                print(enable);
+              } ,
+            ),
 
-          ElevatedButton(
-            onPressed:
+            ElevatedButton(
+              onPressed:
               onPressedUpdateButton,
-            child: const Text('完了'),
-          ),
-          Text('※完了ボタンを押してから、上の矢印で戻ってください'),
+              child: const Text('完了'),
+            ),
+            Text('※完了ボタンを押してから、上の矢印で戻ってください'),
 
-        ],
-      ),
-    );
+          ],
+        ),
+      );
   }
 }

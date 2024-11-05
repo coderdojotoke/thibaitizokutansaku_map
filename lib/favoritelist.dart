@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:thibaitizokutansaku_map/chibauji.dart';
 import 'package:thibaitizokutansaku_map/provider.dart';
-import 'package:thibaitizokutansaku_map/updatescreen.dart';
+import 'package:thibaitizokutansaku_map/updategamen.dart';
 
 class ChibaUjiListPage2 extends ConsumerWidget {
   ChibaUjiListPage2({super.key});
