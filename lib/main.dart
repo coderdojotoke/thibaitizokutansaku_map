@@ -4,11 +4,11 @@ import 'package:thibaitizokutansaku_map/chibaujilist.dart';
 import 'package:thibaitizokutansaku_map/favoritelist.dart';
 import 'package:thibaitizokutansaku_map/map.dart';
 import 'package:thibaitizokutansaku_map/provider.dart';
-
+import 'package:thibaitizokutansaku_map/start.dart';
 import 'medal.dart';
 
 void main() {
-  const app = MaterialApp(home:Root());
+ const app = MaterialApp(home:start());
   const scope = ProviderScope(child: app);
 
   runApp(scope);
@@ -17,7 +17,6 @@ void main() {
 class Root extends ConsumerWidget {
   const Root({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final index = ref.watch(indexProvider);

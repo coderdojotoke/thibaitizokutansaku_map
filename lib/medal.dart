@@ -11,6 +11,7 @@ class MedaliListPage extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         backgroundColor: Colors.white,
         title: const Text('メダル'),
 
@@ -19,16 +20,10 @@ class MedaliListPage extends ConsumerWidget {
           child: ListView.builder(
             itemCount: medalList.length,
             itemBuilder: (BuildContext context, int index) {
-              return ListTile(
-                  contentPadding: const EdgeInsets.all(10),
-                  leading: Image.asset(
-                    '${medalList[index]}',
-                    width: 100,
-                    height: 230,
-                    fit: BoxFit.contain,
-                  ),
-
-                );
+              return Container(
+                height: 250,
+                child: Image.asset('${medalList[index]}'),
+                  );
             },
 
           )

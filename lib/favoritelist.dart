@@ -21,6 +21,7 @@ class ChibaUjiListPage2 extends ConsumerWidget {
     return
       Scaffold(
         appBar:  AppBar(
+          automaticallyImplyLeading: false,
           backgroundColor: Colors.white,
           title: const Text('お気に入りリスト'),
           actions: [
