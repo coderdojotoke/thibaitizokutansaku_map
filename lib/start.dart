@@ -19,6 +19,15 @@ class start extends StatelessWidget {
             //bottom: 10,
             child: _buildFloatingActionButton(context),
           ),
+          Align(
+            alignment: Alignment.center,
+
+            // Positioned(
+            //right: 10,
+            //bottom: 10,
+            child: _licensedisplay(context),
+
+          ),
         ],
       ),
     );
@@ -90,5 +99,22 @@ class start extends StatelessWidget {
          ],
        ),
     );*/
+  }
+  Widget _licensedisplay(context) {
+    return Column(
+      mainAxisAlignment:  MainAxisAlignment.end,
+      children: [
+        Align(
+          alignment: Alignment.bottomCenter,
+          child: ElevatedButton(
+            child: const Text('showLicensePage'),
+            onPressed: () => showLicensePage(context: context),
+          ),
+
+        )
+
+      ],
+    );
+
   }
 }

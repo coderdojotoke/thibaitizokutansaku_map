@@ -8,7 +8,9 @@ import 'package:thibaitizokutansaku_map/start.dart';
 import 'medal.dart';
 
 void main() {
- const app = MaterialApp(home:start());
+ const app = MaterialApp(
+     home:start(),
+ );
   const scope = ProviderScope(child: app);
 
   runApp(scope);
